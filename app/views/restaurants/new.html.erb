@@ -1,0 +1,13 @@
+<%= form_for(@restaurant) do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :category %>
+  <%= f.text_field :category %>
+
+  <%= f.label :adress %>
+  <%= f.text_field :adress %>
+
+  <%= f.submit %>
+  <%= link_to('return to list', restaurants_path) %>
+<% end %>
